@@ -1,0 +1,21 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "fill": (
+      property: fill,
+      class: fill,
+      values: (
+        main: $primary,
+        main-d: $white,
+      ),
+    ),
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
