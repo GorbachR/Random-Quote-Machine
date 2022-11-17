@@ -1,0 +1,19 @@
+@import "../../scss/generatetheme";
+
+.quotes {
+  @include generate-theme {
+    color: get-value("primary-icon");
+  }
+}
+
+.block-quote {
+  @include generate-theme {
+    color: get-value("main-text");
+  }
+}
+
+.author {
+  @include generate-theme {
+    color: get-value("secondary-text");
+  }
+}

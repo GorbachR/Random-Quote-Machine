@@ -1,0 +1,7 @@
+@import "../../scss/generatetheme";
+
+.fa-twitter {
+  @include generate-theme {
+    color: get-value("primary-icon");
+  }
+}

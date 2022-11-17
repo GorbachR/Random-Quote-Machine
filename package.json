@@ -5,12 +5,14 @@
   "main": "./dist/index.html",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "api": "node ./api/api.js"
   },
   "keywords": [],
   "author": "Raphael Gorbach",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
@@ -26,6 +28,8 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-config-react-app": "^7.0.1",
     "html-webpack-plugin": "^5.5.0",
     "postcss-loader": "^7.0.1",
     "sass-loader": "^13.1.0",

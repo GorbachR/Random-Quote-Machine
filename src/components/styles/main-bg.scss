@@ -1,0 +1,7 @@
+@import "../../scss/generatetheme";
+
+.main-bg {
+  @include generate-theme {
+    background: get-value("main-bg");
+  }
+}

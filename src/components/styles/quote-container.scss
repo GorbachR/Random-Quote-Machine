@@ -1,0 +1,7 @@
+@import "../../scss/generatetheme";
+
+.quote-container {
+  @include generate-theme {
+    background: get-value("secondary-bg");
+  }
+}

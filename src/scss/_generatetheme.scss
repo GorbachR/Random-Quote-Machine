@@ -1,0 +1,16 @@
+@import "variables";
+
+@mixin generate-theme {
+  @each $theme, $map in $themes {
+    $current-theme: $map !global;
+    &.theme-#{$theme} {
+      @content;
+      transition: all 0.3s;
+    }
+    $current-theme: null !global;
+  }
+}
+
+@function get-value($key) {
+  @return map-get($current-theme, $key);
+}

@@ -1,4 +1,7 @@
-//@import "~bootstrap/scss/bootstrap";
+@import "./scss/variables";
+@import "./scss/forms/themebutton";
+@import "./scss/utilities/sizing";
+@import "~bootstrap/scss/bootstrap";
 
 *,
 *::before,
