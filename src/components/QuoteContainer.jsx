@@ -16,18 +16,23 @@ function QuoteContainer() {
     if (isFetching) return;
 
     setIsFetching(true);
-    setTimeout(() => {
-      return $.getJSON("http://quotes.stormconsultancy.co.uk/random.json", (res) => {
+    return $.ajax({
+      dataType: "json",
+      url: "http://localhost:8081",
+      success: (res) => {
         setQuote(res);
         setIsFetching(false);
-      }).catch((err) => {});
-    }, 2000);
+      },
+      error: (err) => {},
+    });
   }
 
   useEffect(() => {
-    // const fetch = fetchQuote();
+    const initialFetch = fetchQuote();
 
-    return () => {};
+    return () => {
+      initialFetch.abort();
+    };
   }, []);
 
   return (

@@ -8,9 +8,9 @@ function ThemeButton({ setTheme }) {
   }
 
   return (
-    <div className="form-check theme-btn form-switch mb-1 float-right">
+    <div className="theme-switch mb-1 float-end">
       <input
-        className="form-check-input theme-btn min-h-8 w-14 "
+        className="theme-switch-input min-h-8 w-14"
         type="checkbox"
         role="switch"
         id="flexSwitchCheckDefault"
